@@ -1,0 +1,36 @@
+# name: PyTestCI
+
+# on:
+#   push:
+#     branches: [Master]
+#   pull_request:
+#     branches: [Master]
+
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v2
+#         with:
+#           fetch-depth: 0
+        
+#       - name: Setup Python
+#         uses: actions/setup-python@v2
+#         with:
+#           python-version: "3.8.10"
+          
+#       - name: Switch to Current Branch
+#         run: git checkout ${{ env.BRANCH }}
+          
+#       - name: Install dependencies
+#         run: |
+#           python -m pip install --upgrade pip
+#           pip install pytest
+#           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+#       - name: install
+#         run: |
+#           pip install boto3 requests pyjwt
+#       - name: Run unit tests
+#         run: python -m pytest --import-mode=append tests/
