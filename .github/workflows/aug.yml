@@ -33,25 +33,6 @@ jobs:
           pip install pyspark
           pip install awsglue-local
 
-      - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v1
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: 'ap-south-1'
-
-      # -name: aws ls s3
-      #  run: |
-      #    aws s3 ls
-      # - name: Build Docker Image
-      #   uses: docker://amazon/aws-glue-libs:glue_libs_3.0.0_image_01
-      #   with:
-      #     aws-region: 'ap-south-1'
-      #     aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-      #     aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-      #     role-to-assume: 'arn:aws:iam::958500205200:role/github-actions-deployer'
-      #     role-skip-session-tagging: true
-      #     role-duration-seconds: 1200
       - name: Run Testcases
         run: |
           docker run -e AWS_ACCESS_KEY_ID=${{env.aws-access}} -e AWS_SECRET_ACCESS_KEY=${{env.aws-secret-key}} -e AWS_REGION=${{env.aws_region}} -e AWS_PROFILE=default -v ${{env.working-directory}}:/home/glue_user/workspace/  -e DISABLE_SSL=true --rm --name glue_pytest amazon/aws-glue-libs:glue_libs_3.0.0_image_01 -c "python3 -m pytest"
