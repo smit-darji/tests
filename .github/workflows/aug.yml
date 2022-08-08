@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      working-directory: $GITHUB_WORKSPACE/demo-smit/pythontestcase
+      working-directory: $GITHUB_WORKSPACE
       aws-access: ${{ secrets.AWS_ACCESS_KEY_ID }} 
       aws-secret-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       aws_region: ${{secrets.AWS_REGION}} 
