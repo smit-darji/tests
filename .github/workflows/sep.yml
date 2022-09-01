@@ -26,11 +26,6 @@ jobs:
       - uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
-      - name: Run local server
-        run: |
-          cd html/
-          python run_server.py &
-          sleep 5
-          cd ..
-          pip install -r tests/Requirements.txt
-          python -m pytest -U http://localhost:5000/
+      - uses: Nuitka/Nuitka-Action@v0.4
+        with:
+          script-name: hello_world.py
