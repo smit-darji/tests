@@ -5,4 +5,4 @@ print("\n wait for 10 sec start")
 sleep(10)               # Conventional sleep() Method.
 print("\nafter 10 sec")   
 Event().wait(3.0) # wait() Method, useable sans thread.
-print("\n all Completed)
+print("\n all Completed")
