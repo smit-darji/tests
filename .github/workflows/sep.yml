@@ -22,10 +22,12 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
-
-      # Runs a single command using the runners shell
-      - uses: Nuitka/Nuitka-Action@v0.4
+      - name: checkout repo content
+        uses: actions/checkout@v2 # checkout the repository content to github runner.
+      - name: setup python
+        uses: actions/setup-python@v2
         with:
-          script-name: hello_world.py
+          python-version: 3.8 #install the python needed
+      - name: execute py script # run the run.py to get the latest data
+        run: |
+          python hello_world.py
