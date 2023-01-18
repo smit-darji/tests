@@ -102,6 +102,5 @@ def setup_package():
         test_suite="pytest",
     )
 
-
 if __name__ == "__main__":
     setup_package()
