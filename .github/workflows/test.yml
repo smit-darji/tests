@@ -30,7 +30,7 @@ jobs:
     - name: Run tabpy server
       id: tabpy_run
       run: |
-        ls
+        python ML.py
         echo "-------" 
         tabpy
         # echo ::set-output name=tabpy::tabpy >>$GITHUB_OUTPUT
