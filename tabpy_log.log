@@ -1,0 +1,35 @@
+2023-01-20,15:56:19 [INFO] (app.py:app:244): Parsing config file /home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server/app/../common/default.conf
+2023-01-20,15:56:19 [DEBUG] (app.py:app:205): Parameter port set to "9004" from default value
+2023-01-20,15:56:19 [DEBUG] (app.py:app:205): Parameter server_version set to "2.5.0" from default value
+2023-01-20,15:56:19 [DEBUG] (app.py:app:205): Parameter evaluate_enabled set to "True" from default value
+2023-01-20,15:56:19 [DEBUG] (app.py:app:205): Parameter evaluate_timeout set to "30" from default value
+2023-01-20,15:56:19 [DEBUG] (app.py:app:205): Parameter upload_dir set to "/home/dev1035/.local/lib/python3.10/site-packages/tabpy/tmp/query_objects" from default value
+2023-01-20,15:56:19 [DEBUG] (app.py:app:205): Parameter transfer_protocol set to "http" from default value
+2023-01-20,15:56:19 [DEBUG] (app.py:app:212): Parameter certificate_file is not set
+2023-01-20,15:56:19 [DEBUG] (app.py:app:212): Parameter key_file is not set
+2023-01-20,15:56:19 [DEBUG] (app.py:app:205): Parameter state_file_path set to "/home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server" from default value
+2023-01-20,15:56:19 [DEBUG] (app.py:app:205): Parameter static_path set to "/home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server/static" from default value
+2023-01-20,15:56:19 [DEBUG] (app.py:app:212): Parameter TABPY_PWD_FILE is not set
+2023-01-20,15:56:19 [DEBUG] (app.py:app:205): Parameter log_request_context set to "false" from default value
+2023-01-20,15:56:19 [DEBUG] (app.py:app:205): Parameter max_request_size_in_mb set to "100" from default value
+2023-01-20,15:56:19 [INFO] (app.py:app:436): Loading state from state file /home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server/state.ini
+2023-01-20,15:56:19 [DEBUG] (app.py:app:313): Static pages folder set to "/home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server/static"
+2023-01-20,15:56:19 [INFO] (app.py:app:332): Password file is not specified: Authentication is not enabled
+2023-01-20,15:56:19 [INFO] (app.py:app:347): Call context logging is disabled
+2023-01-20,15:56:19 [INFO] (app.py:app:125): Initializing TabPy...
+2023-01-20,15:56:19 [DEBUG] (selector_events.py:selector_events:54): Using selector: EpollSelector
+2023-01-20,15:56:19 [INFO] (callbacks.py:callbacks:43): Initializing TabPy Server...
+2023-01-20,15:56:19 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2023-01-20,15:56:19 [DEBUG] (state.py:state:635): Returning value '[]'
+2023-01-20,15:56:19 [DEBUG] (state.py:state:148): Collected endpoints: {}
+2023-01-20,15:56:19 [INFO] (app.py:app:129): Done initializing TabPy.
+2023-01-20,15:56:19 [INFO] (app.py:app:83): Setting max request size to 104857600 bytes
+2023-01-20,15:56:19 [INFO] (callbacks.py:callbacks:64): Initializing models...
+2023-01-20,15:56:19 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2023-01-20,15:56:19 [DEBUG] (state.py:state:635): Returning value '[]'
+2023-01-20,15:56:19 [DEBUG] (state.py:state:148): Collected endpoints: {}
+2023-01-20,15:56:19 [INFO] (app.py:app:106): Web service listening on port 9004
+2023-01-20,15:57:38 [CRITICAL] (app.py:app:117): Exiting on signal 2...
+2023-01-20,15:57:38 [CRITICAL] (app.py:app:117): Exiting on signal 2...
+2023-01-20,15:57:38 [INFO] (app.py:app:123): Shutting down TabPy...
+2023-01-20,15:57:38 [INFO] (app.py:app:123): Shutting down TabPy...
