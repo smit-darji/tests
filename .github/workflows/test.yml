@@ -3,7 +3,7 @@ name: Test Run on Push
 on: [push]
 
 jobs:
-  build:
+  INSTALLATION:
     outputs:
       tabpy: ${{ steps.tabpy_run.outputs.tabpy }}
     name: ${{ matrix.python-version }} on ${{ matrix.os }}
@@ -32,8 +32,7 @@ jobs:
         
   python_rn: # Job that validates files and directory names
       runs-on: ubuntu-latest
-      needs: tabpy
-
+      needs: INSTALLATION
       steps:
         - name: Test with pytest
           run: |
