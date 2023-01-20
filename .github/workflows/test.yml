@@ -30,7 +30,8 @@ jobs:
     - name: tun tabpy server
       id: tabpy_run
       run: |
-        echo ::set-output name=tabpy::tabpy >>$GITHUB_OUTPUT
+        tabpy
+        # echo ::set-output name=tabpy::tabpy >>$GITHUB_OUTPUT
 
         
   python_run: # Job that validates files and directory names
@@ -39,6 +40,6 @@ jobs:
       steps:
         - name: Test with pytest
           run: |
-            ls
+            ls -a
             echo "----------"
             python ML.py
