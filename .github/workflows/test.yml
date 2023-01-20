@@ -5,7 +5,7 @@ on: [push]
 jobs:
   build:
     outputs:
-      tabpy: ${{ steps.tabpy-run.outputs.tabpy }}
+      tabpy: ${{ steps.tabpy_run.outputs.tabpy }}
     name: ${{ matrix.python-version }} on ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     
@@ -23,7 +23,7 @@ jobs:
         python-version: ${{ matrix.python-version }}
 
     - name: Install dependencies
-      id: tabpy-run
+      id: tabpy_run
       run: |
         python -m pip install --upgrade pip
         pip install tabpy
